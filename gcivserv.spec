@@ -1,6 +1,6 @@
 Summary:	Graphical front-end for FREE CIVilization clone
 Summary(es):	GTK front-end por Clon del juego Civilization
-Summary(pl):	Graficzny front-end dla serwera freeciv
+Summary(pl):	Graficzny frontend dla serwera freeciv
 Name:		gcivserv
 Version:	0.1b
 Release:	1
@@ -11,22 +11,21 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-pl_lang.patch
 URL:		http://www.freeciv.org/
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel > 1.2.1
-BuildRequires:	gettext
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	freeciv
-
-%define		_prefix		/usr/X11R6
-
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GTK front-end for server of freeciv -  clone of Sid Meiers Civilization.
+GTK front-end for server of freeciv - clone of Sid Meiers
+Civilization.
 
 %description -l es
 GTK front-end por Clon del juego Civilization.
 
 %description -l pl
-Graficzny front-end dla serwera freeciv.
+Graficzny frontend dla serwera freeciv - klonu Civilization Sida
+Meiersa.
 
 %prep
 %setup -q -n gCivServ-%{version}
@@ -43,7 +42,6 @@ install -d $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults \
 	$RPM_BUILD_ROOT{%{_applnkdir}/Games/Strategy,%{_pixmapsdir}}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/Strategy
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
