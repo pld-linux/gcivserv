@@ -7,4 +7,5 @@ Exec=gcivserv
 Icon=gcivserv.png
 Terminal=false
 Type=Application
+Categories=GTK;Game;StrategyGame;
 # vi: encoding=utf-8
