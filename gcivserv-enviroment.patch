@@ -5,7 +5,7 @@
    char* shostid     = gtk_entry_get_text( GTK_ENTRY(phostid)     );
    
 -  char server[1024]="export LANG=C;civserver";
-+  char server[1024]="/usr/bin/civserver";
++  char server[1024]="export LANG=C;/usr/bin/civserver";
    
    if(sgame[0]!=0){
      strcat(server," -f ");
