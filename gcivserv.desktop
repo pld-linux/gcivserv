@@ -4,6 +4,6 @@ Comment=Graphical server for Free Civilization clone game
 Comment[pl]=Graficzny serwer dla freeciv
 Exec=gcivserv
 Icon=gcivserv.png
-Terminal=0
+Terminal=false
 Type=Application
 # vi: encoding=utf-8
