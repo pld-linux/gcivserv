@@ -1,0 +1,1369 @@
+diff -urN gCivServ-0.1b/configure gcivpl/configure
+--- gCivServ-0.1b/configure	Fri Jan 12 21:48:39 2001
++++ gcivpl/configure	Sun Mar  2 21:46:58 2003
+@@ -1788,7 +1788,7 @@
+   rm -f conf.gtktest
+ 
+ 
+-ALL_LINGUAS="de es"
++ALL_LINGUAS="de es pl"
+ # Extract the first word of "ranlib", so it can be a program name with args.
+ set dummy ranlib; ac_word=$2
+ echo $ac_n "checking for $ac_word""... $ac_c" 1>&6
+diff -urN gCivServ-0.1b/po/pl.po gcivpl/po/pl.po
+--- gCivServ-0.1b/po/pl.po	Thu Jan  1 01:00:00 1970
++++ gcivpl/po/pl.po	Sun Mar  2 21:17:38 2003
+@@ -0,0 +1,913 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR Free Software Foundation, Inc.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: 0.2\n"
++"POT-Creation-Date: 2003-03-03 19:24+0100\n"
++"PO-Revision-Date: 2003-03-03 19:24+0100\n"
++"Last-Translator: Wies³aw Kierbed¼ <agimoja@go2.pl>\n"
++"Language-Team: Wies³aw Kierbed¼ <agimoja@go2.pl>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=CHARSET\n"
++"Content-Transfer-Encoding: ISO8859-2\n"
++
++#: src/interface.c:65
++msgid "gCivServ - Startup"
++msgstr "gCivServ - Start"
++
++#: src/interface.c:77
++msgid "Load"
++msgstr "Wczytaj"
++
++#: src/interface.c:104
++msgid "Previous saved game to continue"
++msgstr "Kontynuuj poprzedni± grê"
++
++#: src/interface.c:114
++msgid "Startscript to execute to set server parameters"
++msgstr "Skrypt startowy ustawieñ serwera"
++
++#: src/interface.c:116 src/interface.c:125 src/interface.c:194
++#: src/interface.c:203 src/interface.c:771 src/interface.c:780
++#: src/interface.c:2315
++msgid "..."
++msgstr "..."
++
++#: src/interface.c:134
++msgid "Start Script:"
++msgstr "Skrypt startowy"
++
++#: src/interface.c:144 src/interface.c:1528
++msgid "Game:"
++msgstr "Gra:"
++
++#: src/interface.c:155
++msgid "Logs"
++msgstr "Logi"
++
++#: src/interface.c:182
++msgid "File for logging game infos"
++msgstr "Plik do zapisania informacji o grze"
++
++#: src/interface.c:192
++msgid "File for logging server messages"
++msgstr "Plik do zapisywania komunikatów serwera"
++
++#: src/interface.c:212
++msgid "Game Log:"
++msgstr "Raport gry:"
++
++#: src/interface.c:223
++msgid "Server Log:"
++msgstr "Raport serwera:"
++
++#: src/interface.c:234
++msgid "Debug Level:"
++msgstr "Poziom debugowania:"
++
++#: src/interface.c:254
++msgid "Amount of server messages (0-2)"
++msgstr "Liczba komunikatów serwera (0-2)"
++
++#: src/interface.c:256
++msgid "Network"
++msgstr "Sieæ"
++
++#: src/interface.c:275
++msgid "Port Number:"
++msgstr "Numer portu:"
++
++#: src/interface.c:295
++msgid "Port number the server should be listening on"
++msgstr "Numer portu, na którym serwer powinien nas³uchiwaæ"
++
++#: src/interface.c:297
++msgid "Metaserver"
++msgstr "Metaserver"
++
++#: src/interface.c:316
++msgid "Address:"
++msgstr "Adres:"
++
++#: src/interface.c:327
++msgid "Host ID:"
++msgstr "Host ID:"
++
++#: src/interface.c:346
++msgid "Address of the metaserver"
++msgstr "Adres Metaservera"
++
++#: src/interface.c:347
++msgid "meta.freeciv.org"
++msgstr "meta.freeciv.org"
++
++#: src/interface.c:357
++msgid "ID to be shown as server name on meta server"
++msgstr "Nazwa pokazywana jako nazwa serwera na Metaserwerze"
++
++#: src/interface.c:359
++msgid "Use Metaserver"
++msgstr "U¿yj Metaserwera"
++
++#: src/interface.c:368
++msgid "Start Server"
++msgstr "Uruchom Serwer"
++
++#: src/interface.c:667
++msgid "gCivServ"
++msgstr "gCivServ"
++
++#: src/interface.c:687
++msgid "Start Game"
++msgstr "Startuj grê"
++
++#: src/interface.c:715
++msgid "Files:"
++msgstr "Pliki:"
++
++#: src/interface.c:733
++msgid "Save Startscript"
++msgstr "Zachowaj skrypt startowy"
++
++#: src/interface.c:742
++msgid "Save Game"
++msgstr "Zachowaj grê"
++
++#: src/interface.c:759
++msgid "Save all set options. Can be loaded as script next time you start the server."
++msgstr "Zachowaj wszystkie ustawienia. Bêd± mog³y byæ wczytane, kiedy nastêpnym razem bêdziesz uruchamiaæ serwer."
++
++#: src/interface.c:769
++msgid "Save the currently running game"
++msgstr "Zapisz obecn± grê"
++
++#: src/interface.c:807
++msgid "About:"
++msgstr "Autor:"
++
++#: src/interface.c:817
++msgid ""
++"gCivServ v0.1\n"
++"by Lars Hoeyer\n"
++"<Lars@Hoeyer.de>"
++msgstr ""
++"gCivServ v0.1\n"
++"Lars Hoeyer\n"
++"<Lars@Hoeyer.de>"
++
++#: src/interface.c:834 src/interface.c:3298
++msgid "Control"
++msgstr "Kontrola"
++
++#: src/interface.c:866
++msgid "Width:"
++msgstr "Szeroko¶æ:"
++
++#: src/interface.c:876
++msgid "Height:"
++msgstr "Wysoko¶æ:"
++
++#: src/interface.c:886
++msgid "Generator:"
++msgstr "Generator:"
++
++#: src/interface.c:896
++msgid "Landmass:"
++msgstr "Równiny:"
++
++#: src/interface.c:906
++msgid "Mountains:"
++msgstr "Góry:"
++
++#: src/interface.c:916
++msgid "Rivers:"
++msgstr "Rzeki:"
++
++#: src/interface.c:926
++msgid "Grass:"
++msgstr "Stepy:"
++
++#: src/interface.c:936
++msgid "Forests:"
++msgstr "Lasy:"
++
++#: src/interface.c:946
++msgid "Swamps:"
++msgstr "Bagna:"
++
++#: src/interface.c:956
++msgid "Deserts:"
++msgstr "Pustynie:"
++
++#: src/interface.c:966
++msgid "Map seed:"
++msgstr "Przypadkowo¶æ mapy:"
++
++#: src/interface.c:976
++msgid "Rand seed:"
++msgstr "Wp³yw przypadku na grê:"
++
++#: src/interface.c:986
++msgid "Specials:"
++msgstr "Specjalne:"
++
++#: src/interface.c:996
++msgid "Huts:"
++msgstr "Chaty:"
++
++#: src/interface.c:1015
++msgid "Amount of land vs ocean"
++msgstr "Proporcje l±du i oceanu"
++
++#: src/interface.c:1026
++msgid "Amount of hills/mountains"
++msgstr "Ilo¶æ wzgórz i gór"
++
++#: src/interface.c:1037
++msgid "Amount of river squares"
++msgstr "Powierzchnia rzek"
++
++#: src/interface.c:1048
++msgid "Amount of grass squares"
++msgstr "Powierzchnia stepów"
++
++#: src/interface.c:1059
++msgid "Amount of forest squares"
++msgstr "Powierzchnia lasów"
++
++#: src/interface.c:1070
++msgid "Amount of swamp squares"
++msgstr "Powierzchnia bagien"
++
++#: src/interface.c:1081
++msgid "Amount of desert squares"
++msgstr "Powierzchnia pustyñ"
++
++#: src/interface.c:1092
++msgid "Map generation random seed"
++msgstr "Stopieñ przypadkowo¶ci mapy"
++
++#: src/interface.c:1103
++msgid "General random seed"
++msgstr "Ogólny poziom przypadkowo¶ci"
++
++#: src/interface.c:1114
++msgid "Amount of \"special\" resource squares"
++msgstr "Ilo¶æ zasobów specjalnych"
++
++#: src/interface.c:1125
++msgid "Map width in scares"
++msgstr "Szeroko¶æ mapy (ilo¶æ pól)"
++
++#: src/interface.c:1136
++msgid "Map height in squares"
++msgstr "Wysoko¶æ mapy (ilo¶æ pól)"
++
++#: src/interface.c:1147
++msgid "Method used to generate map"
++msgstr "Sposób generowania mapy"
++
++#: src/interface.c:1158
++msgid "Amount of huts (minor tribe villages)"
++msgstr "Ilo¶æ chat (minimalna dla miejscowo¶ci)"
++
++#: src/interface.c:1178 src/interface.c:1398 src/interface.c:1618
++#: src/interface.c:2018 src/interface.c:2324
++msgid "Update These Options"
++msgstr "Uaktualnij opcje"
++
++#: src/interface.c:1188
++msgid "Map"
++msgstr "Mapa"
++
++#: src/interface.c:1229
++msgid "Minimum number of players"
++msgstr "Minimalna liczba graczy"
++
++#: src/interface.c:1240
++msgid "Maximum number of players"
++msgstr "Maksymalna liczba graczy"
++
++#: src/interface.c:1251
++msgid "Number of players to fill to with AI's"
++msgstr "Liczba graczy AI (generowanych przez komputer)"
++
++#: src/interface.c:1262
++msgid "Number of initial settlers per player"
++msgstr "Pocz±tkowa ilo¶æ osadników dla gracza"
++
++#: src/interface.c:1273
++msgid "Number of initial explorers per player"
++msgstr "Pocz±tkowa ilo¶æ poszukiwaczy dla gracza"
++
++#: src/interface.c:1284
++msgid "Area where initial units are located"
++msgstr "Strefa, gdzie s± umieszczone pierwsze zespo³y"
++
++#: src/interface.c:1295
++msgid "Starting gold per player"
++msgstr "Pocz±tkowa ilo¶æ z³ota dla gracza"
++
++#: src/interface.c:1306
++msgid "Number of initial advances per player"
++msgstr "Pocz±tkowa ilo¶æ wynalazków dla gracza"
++
++#: src/interface.c:1308
++msgid "Techlevel:"
++msgstr "Poziom technologii:"
++
++#: src/interface.c:1317
++msgid "Gold:"
++msgstr "Z³oto:"
++
++#: src/interface.c:1326
++msgid "Dispersion:"
++msgstr "Miejsce startu:"
++
++#: src/interface.c:1335
++msgid "Number of explorer:"
++msgstr "Ilo¶æ poszukiwaczy:"
++
++#: src/interface.c:1344
++msgid "Number of settlers:"
++msgstr "Ilo¶æ osadników:"
++
++#: src/interface.c:1353
++msgid "AI-fill:"
++msgstr "Utwórz AI (graczy \"komputerowych\"):"
++
++#: src/interface.c:1362
++msgid "Max number of players:"
++msgstr "Maksymalna liczba graczy:"
++
++#: src/interface.c:1371
++msgid "Min number of players:"
++msgstr "Minimalna liczba graczy:"
++
++#: src/interface.c:1408
++msgid "Players"
++msgstr "Gracze"
++
++#: src/interface.c:1448
++msgid "Data subdir containing techs.ruleset"
++msgstr "Folder zawieraj±cy techs.ruleset"
++
++#: src/interface.c:1449 src/interface.c:1460 src/interface.c:1471
++#: src/interface.c:1482 src/interface.c:1493 src/interface.c:1504
++#: src/interface.c:1515 src/interface.c:1526
++msgid "default"
++msgstr "predefiniowany"
++
++#: src/interface.c:1459
++msgid "Data subdir containing governments.ruleset"
++msgstr "Folder zawieraj±cy governments.ruleset"
++
++#: src/interface.c:1470
++msgid "Data subdir containing units.ruleset"
++msgstr "Folder zawieraj±cy units.ruleset"
++
++#: src/interface.c:1481
++msgid "Data subdir containing buildings.ruleset"
++msgstr "Folder zawieraj±cy buildings.ruleset"
++
++#: src/interface.c:1492
++msgid "Data subdir containing terrain.ruleset"
++msgstr "Folder zawieraj±cy terrain.ruleset"
++
++#: src/interface.c:1503
++msgid "Data subdir containing nations.rulese"
++msgstr "Folder zawieraj±cy nations.ruleset"
++
++#: src/interface.c:1514
++msgid "Data subdir containing cities.ruleset"
++msgstr "Folder zawieraj±cy cities.ruleset"
++
++#: src/interface.c:1525
++msgid "Data subdir containing game.ruleset"
++msgstr "Folder zawieraj±cy game.ruleset"
++
++#: src/interface.c:1537
++msgid "Cities:"
++msgstr "Miasta:"
++
++#: src/interface.c:1546
++msgid "Nations:"
++msgstr "Narody:"
++
++#: src/interface.c:1555
++msgid "Terrain:"
++msgstr "Teren:"
++
++#: src/interface.c:1564
++msgid "Buildings:"
++msgstr "Budynki:"
++
++#: src/interface.c:1573
++msgid "Units:"
++msgstr "Jednostki:"
++
++#: src/interface.c:1582
++msgid "Governments:"
++msgstr "Rz±d:"
++
++#: src/interface.c:1591
++msgid "Techs:"
++msgstr "Technologie:"
++
++#: src/interface.c:1628
++msgid "Directories"
++msgstr "Foldery"
++
++#: src/interface.c:1669
++msgid "Points required to gain a new advance"
++msgstr "Punkt potrzebny do osi±gniêcia nowego poziomu rozwoju"
++
++#: src/interface.c:1680
++msgid "Percentage penalty when changing tech"
++msgstr "Straty przy zmianie poziomu technologii"
++
++#: src/interface.c:1691
++msgid "Penalty when getting tech from treaty"
++msgstr "Straty przy podwy¿szeniu poziomu technologii"
++
++#: src/interface.c:1702
++msgid "Penalty when getting a free tech"
++msgstr "Straty przy podwy¿szeniu poziomu technologii za darmo"
++
++#: src/interface.c:1713
++msgid "Penalty when getting tech from conquering\n"
++msgstr "Straty przy podwy¿szeniu poziomu technologii za pomoc± podboju\n"
++
++#: src/interface.c:1724
++msgid "Food required for a city to grow"
++msgstr "Ilo¶æ ¿ywno¶ci potrzebna do wzrostu miasta"
++
++#: src/interface.c:1735
++msgid "Percentage food lost when need aqueduct"
++msgstr "Ilo¶æ straconej ¿ywno¶ci, kiedy potrzebny jest akwedukt"
++
++#: src/interface.c:1746
++msgid "City size before people become unhappy"
++msgstr "Wielko¶æ miasta zanim obywatele stan± siê niezadowoleni"
++
++#: src/interface.c:1757
++msgid "Number of cities for higher unhappiness"
++msgstr "Ilo¶æ miast, powy¿ej której niezadowolenie wzrasta"
++
++#: src/interface.c:1768
++msgid "Chance for conquered building destruction"
++msgstr "Prawdopodobieñstwo ulegniêcia podbojowi, na skutek zniszczeñ"
++
++#: src/interface.c:1779
++msgid "Style of Civ rules"
++msgstr "Jak bardzo zasady wp³ywaj± na przebieg gry"
++
++#: src/interface.c:1790
++msgid "Chance of moving into tile after attack"
++msgstr "Prawdopodobieñstwo przej¶cia do legendy po ataku"
++
++#: src/interface.c:1801
++msgid "Reduce city population after attack"
++msgstr "Spadek populacji miasta po ataku"
++
++#: src/interface.c:1812
++msgid "Barbarian appearance frequency"
++msgstr "Czêstotliwo¶æ pojawiania siê barbarzyñców"
++
++#: src/interface.c:1823
++msgid "Barbarian onset year"
++msgstr "Rok pojawienia siê barbarzyñców"
++
++#: src/interface.c:1834
++msgid "Minimum number of cities for civil war"
++msgstr "Minimalna liczba miast dla wywo³ania wojny domowej"
++
++#: src/interface.c:1845
++msgid "Chance in diplomat/spy contests"
++msgstr "Skuteczno¶æ dzia³ania dyplomatów/szpiegów"
++
++#: src/interface.c:1847
++msgid "Researchspeed:"
++msgstr "Wydajno¶æ badañ naukowych:"
++
++#: src/interface.c:1856
++msgid "Tech Penalty:"
++msgstr "Koszty technologii:"
++
++#: src/interface.c:1865
++msgid "Diplomacy Cost:"
++msgstr "Koszty dyplomacji:"
++
++#: src/interface.c:1874
++msgid "Conquer Cost:"
++msgstr "Koszty podbojów:"
++
++#: src/interface.c:1883
++msgid "Free Cost:"
++msgstr "Koszty uwolnienia:"
++
++#: src/interface.c:1892
++msgid "Food Box:"
++msgstr "Koszty w ¿ywno¶ci:"
++
++#: src/interface.c:1901
++msgid "Aqueduct Loss:"
++msgstr "Deficyt akweduktów:"
++
++#: src/interface.c:1910
++msgid "Unhappysize:"
++msgstr "Poziom niezadowolenia:"
++
++#: src/interface.c:1919
++msgid "City Factor:"
++msgstr "Mno¿nik miast:"
++
++#: src/interface.c:1928
++msgid "Razechance:"
++msgstr "Prawdopodobieñstwo upadku:"
++
++#: src/interface.c:1937
++msgid "Civstyle:"
++msgstr "Si³a zasad:"
++
++#: src/interface.c:1946
++msgid "Occupychance:"
++msgstr "Prawdopodobieñstwo okupacji:"
++
++#: src/interface.c:1955
++msgid "Kill Citizen:"
++msgstr "Koszty populacji:"
++
++#: src/interface.c:1964
++msgid "Barbarians:"
++msgstr "Barbarzyñcy:"
++
++#: src/interface.c:1973
++msgid "Onset Barbarians:"
++msgstr "Pojawienie siê barbarzyñców:"
++
++#: src/interface.c:1982
++msgid "Diplomacychance:"
++msgstr "Si³a dyplomacji:"
++
++#: src/interface.c:1991
++msgid "Civilwarsize:"
++msgstr "Wojna domowa:"
++
++#: src/interface.c:2028
++msgid "Rules"
++msgstr "Zasady"
++
++#: src/interface.c:2065
++msgid "What is in the Demographics report"
++msgstr "Co ma znale¼æ siê w raporcie demograficznym?"
++
++#: src/interface.c:2066
++msgid "NASRLPEMOqrb"
++msgstr "NASRLPEMOqrb"
++
++#: src/interface.c:2068
++msgid "Fog Of War:"
++msgstr "Mg³a wojny:"
++
++#: src/interface.c:2077
++msgid "Space Race:"
++msgstr "Wy¶cig w podboju kosmosu:"
++
++#: src/interface.c:2086
++msgid "Auto Toggle:"
++msgstr "Prze³±czanie automatyczne:"
++
++#: src/interface.c:2095
++msgid "End Year:"
++msgstr "Rok koñca gry:"
++
++#: src/interface.c:2104
++msgid "Time Out:"
++msgstr "Kiedy gra siê koñczy:"
++
++#: src/interface.c:2113
++msgid "Turn Block:"
++msgstr "Zastosuj blokadê:"
++
++#: src/interface.c:2122
++msgid "Fixed Length:"
++msgstr "Sta³a d³ugo¶æ:"
++
++#: src/interface.c:2131
++msgid "Demography:"
++msgstr "Demografia:"
++
++#: src/interface.c:2140
++msgid "Save Turns:"
++msgstr "Czêstotliwo¶æ zapisu:"
++
++#: src/interface.c:2149
++msgid "Compress:"
++msgstr "Kompresuj:"
++
++#: src/interface.c:2158
++msgid "Scorelog:"
++msgstr "Raport wyników:"
++
++#: src/interface.c:2167
++msgid "Gamelog:"
++msgstr "Raport gry:"
++
++#: src/interface.c:2203
++msgid "Whether to enable fog of war"
++msgstr "Czy w³±czyæ Mg³ê wojny"
++
++#: src/interface.c:2214
++msgid "Whether to allow space race"
++msgstr "Czy w³±czyæ wy¶cig w podboju kosmosu"
++
++#: src/interface.c:2225
++msgid "Whether AI-status toggles with connection"
++msgstr "Czy status AI zmienia siê po po³±czeniu"
++
++#: src/interface.c:2236
++msgid "Year the game ends"
++msgstr "Rok, kiedy gra siê koñczy"
++
++#: src/interface.c:2247
++msgid "Maximum seconds per turn"
++msgstr "Maksimum sekund dla jednej tury"
++
++#: src/interface.c:2258
++msgid "Turn-blocking game play mode"
++msgstr "Gra z zablokowanymi turami"
++
++#: src/interface.c:2269
++msgid "Fixed-length turns play mode"
++msgstr "Gra o sta³ej d³ugo¶ci tur"
++
++#: src/interface.c:2280
++msgid "Turns per auto-save"
++msgstr "Co ile tur autozapis"
++
++#: src/interface.c:2291
++msgid "Savegame compression level"
++msgstr "Poziom kompresji zapisu gry"
++
++#: src/interface.c:2302
++msgid "Whether to log player statistics"
++msgstr "Czy zapisywaæ statystyki graczy w logu"
++
++#: src/interface.c:2313
++msgid "Detail level for logging game events"
++msgstr "Szczegó³owo¶æ zapisywanych w logu zdarzeñ"
++
++#: src/interface.c:2334
++msgid "Game"
++msgstr "Gra"
++
++#: src/interface.c:2355
++msgid "Update List"
++msgstr "Uaktualnij listê"
++
++#: src/interface.c:2384 src/interface.c:3391
++msgid "Name"
++msgstr "Imiê"
++
++#: src/interface.c:2391
++msgid "Real Name"
++msgstr "Prawdziwe imiê"
++
++#: src/interface.c:2398
++msgid "From"
++msgstr "Z"
++
++#: src/interface.c:2405
++msgid "Type"
++msgstr "Typ"
++
++#: src/interface.c:2412
++msgid "Level"
++msgstr "Poziom"
++
++#: src/interface.c:2430
++msgid "Create"
++msgstr "Stwórz"
++
++#: src/interface.c:2437
++msgid "Create an AI player with a given name"
++msgstr "Stwórz gracza AI o podanym imieniu"
++
++#: src/interface.c:2439
++msgid "AI Toggle"
++msgstr "AI/cz³owiek"
++
++#: src/interface.c:2446
++msgid "Toggle AI status of player"
++msgstr "Zmienia status gracza AI/cz³owiek"
++
++#: src/interface.c:2448
++msgid "Kick"
++msgstr "Wywal go"
++
++#: src/interface.c:2455
++msgid "Cut connection to player"
++msgstr "Od³±cza gracza od serwera"
++
++#: src/interface.c:2457
++msgid "Remove"
++msgstr "Usuñ"
++
++#: src/interface.c:2464
++msgid ""
++"Fully remove player from game.  This *completely* removes a player from the "
++"game, including all cities and units etc.  Use with care!"
++msgstr ""
++"Usuwa gracza na amen. Kompletnie kasuje wszystkie dane o nim "
++"w³±cznie z miastami, jednostkami itp. OSTRO¯nie!"
++
++#: src/interface.c:2466
++msgid "Change Level"
++msgstr "Zmieñ poziom"
++
++#: src/interface.c:2473
++msgid "Changes command level of user or difficulty of AI"
++msgstr "Zmienia poziom komend gracza, albo poziom trudno¶ci dla AI"
++
++#: src/interface.c:2475
++msgid "Player List"
++msgstr "Lista graczy"
++
++#: src/interface.c:2511
++msgid "Console"
++msgstr "Konsola"
++
++#: src/interface.c:2772
++msgid "Load Game"
++msgstr "Wczytaj grê"
++
++#: src/interface.c:2803
++msgid "Execute Script"
++msgstr "Uruchom skrypt"
++
++#: src/interface.c:2834
++msgid "Choose Game Log"
++msgstr "Wybierz log gry"
++
++#: src/interface.c:2865
++msgid "Choose Server Log"
++msgstr "Wybierz log serwera"
++
++#: src/interface.c:2896
++msgid "Save game"
++msgstr "Zapisz grê"
++
++#: src/interface.c:2927
++msgid "Save options as start script"
++msgstr "Zachowaj opcje i skrypt startowy"
++
++#: src/interface.c:2980
++msgid "Edit demography report"
++msgstr "Edytuj raport demograficzny"
++
++#: src/interface.c:2997
++msgid "Lines"
++msgstr "Linie"
++
++#: src/interface.c:3012
++msgid "Population"
++msgstr "Populacja"
++
++#: src/interface.c:3019
++msgid "Land Area"
++msgstr "Obszar l±du"
++
++#: src/interface.c:3026
++msgid "Settled Area"
++msgstr "Obszar do zasiedlenia"
++
++#: src/interface.c:3033
++msgid "Research Speed"
++msgstr "Wydajno¶æ badañ"
++
++#: src/interface.c:3040
++msgid "Literacy"
++msgstr "Literatura"
++
++#: src/interface.c:3047
++msgid "Production"
++msgstr "Produkcja"
++
++#: src/interface.c:3054
++msgid "Economics"
++msgstr "Ekonomia"
++
++#: src/interface.c:3061
++msgid "Military Service"
++msgstr "Wojskowo¶æ"
++
++#: src/interface.c:3068
++msgid "Pollution"
++msgstr "Zanieczyszczenie ¶rodowiska"
++
++#: src/interface.c:3075
++msgid "Columns"
++msgstr "Kolumny"
++
++#: src/interface.c:3090
++msgid "Quantity"
++msgstr "Iloraz"
++
++#: src/interface.c:3097
++msgid "Rank"
++msgstr "Ranking"
++
++#: src/interface.c:3104
++msgid "Best Nation"
++msgstr "Najlepszy naród"
++
++#: src/interface.c:3126 src/interface.c:3222 src/interface.c:3326
++#: src/interface.c:3418
++msgid "OK"
++msgstr "Zgoda"
++
++#: src/interface.c:3134 src/interface.c:3230 src/interface.c:3334
++#: src/interface.c:3426
++msgid "Cancel"
++msgstr "Anuluj"
++
++#: src/interface.c:3170
++msgid "Select Difficulty LEvel"
++msgstr "Wybierz p[oziom trudno¶ci"
++
++#: src/interface.c:3185
++msgid "Easy"
++msgstr "£atwy"
++
++#: src/interface.c:3193
++msgid "Normal"
++msgstr "Normalny"
++
++#: src/interface.c:3201
++msgid "Hard"
++msgstr "Trudny"
++
++#: src/interface.c:3267
++msgid "Select Command Level"
++msgstr "Wybierz ilo¶æ komunikatów"
++
++#: src/interface.c:3282
++msgid "None"
++msgstr "¯adnych"
++
++#: src/interface.c:3290
++msgid "Info"
++msgstr "Info"
++
++#: src/interface.c:3306
++msgid "Hack"
++msgstr "Hack"
++
++#: src/interface.c:3369
++msgid "Create New Player"
++msgstr "Stwórz nowego gracza"
++
++#: src/support.c:118
++#, c-format
++msgid "Couldn't find pixmap file: %s"
++msgstr "Nie mogê znale¼æ pliku obrazu: %s"
++
++#: src/support.c:127
++#, c-format
++msgid "Error loading pixmap file: %s"
++msgstr "B³±d przy wczytywaniu obrazka: %s"
++#: src/interface.c:3480
++msgid "Select generator type"
++msgstr "Wybierz typ generatora"
++
++#: src/interface.c:3502
++msgid ""
++"equally sized large islands with one player each, and twice that many "
++"smaller islands"
++msgstr ""
++"porównywalne obszarem du¿e wyspy z jednym graczem na ka¿dej "
++"i dwa razy wiêcej ma³ych wysp"
++
++#: src/interface.c:3514
++msgid "standard, with random continents"
++msgstr "normalne z przypadkowymi kontynentami"
++
++#: src/interface.c:3525
++msgid ""
++"equally sized large islands with one player each, and a number of other "
++"islands of similar size"
++msgstr ""
++"porównywalne obszarem du¿e wyspy z jednym graczem na ka¿dej "
++"i trochê wysp o podobnej powierzchni"
++
++#: src/interface.c:3537
++msgid ""
++"equally sized large islands with two players on every island (or one with "
++"three players for an odd number of players), and additional smaller islands"
++msgstr ""
++"porównywalne obszarem du¿e wyspy z dwoma graczami na ka¿dej (lub z trzema, "
++"je¶li jest du¿o graj±cych) i dodatkowo ma³e wyspy"
+diff -urN gCivServ-0.1b/po/pl.po.diff gcivpl/po/pl.po.diff
+--- gCivServ-0.1b/po/pl.po.diff	Thu Jan  1 01:00:00 1970
++++ gcivpl/po/pl.po.diff	Sun Mar  2 19:31:47 2003
+@@ -0,0 +1,214 @@
++0a1,213
++> msgid ""
++> msgid "gCivServ - Startup"
++> msgid "Load"
++> msgid "Previous saved game to continue"
++> msgid "Startscript to execute to set server parameters"
++> msgid "..."
++> msgid "Start Script:"
++> msgid "Game:"
++> msgid "Logs"
++> msgid "File for logging game infos"
++> msgid "File for logging server messages"
++> msgid "Game Log:"
++> msgid "Server Log:"
++> msgid "Debug Level:"
++> msgid "Amount of server messages (0-2)"
++> msgid "Network"
++> msgid "Port Number:"
++> msgid "Port number the server should be listening on"
++> msgid "Metaserver"
++> msgid "Address:"
++> msgid "Host ID:"
++> msgid "Address of the metaserver"
++> msgid "meta.freeciv.org"
++> msgid "ID to be shown as server name on meta server"
++> msgid "Use Metaserver"
++> msgid "Start Server"
++> msgid "gCivServ"
++> msgid "Start Game"
++> msgid "Files:"
++> msgid "Save Startscript"
++> msgid "Save Game"
++> msgid "Save all set options. Can be loaded as script next time you start the server."
++> msgid "Save the currently running game"
++> msgid "About:"
++> msgid ""
++> msgid "Control"
++> msgid "Width:"
++> msgid "Height:"
++> msgid "Generator:"
++> msgid "Landmass:"
++> msgid "Mountains:"
++> msgid "Rivers:"
++> msgid "Grass:"
++> msgid "Forests:"
++> msgid "Swamps:"
++> msgid "Deserts:"
++> msgid "Map seed:"
++> msgid "Rand seed:"
++> msgid "Specials:"
++> msgid "Huts:"
++> msgid "Amount of land vs ocean"
++> msgid "Amount of hills/mountains"
++> msgid "Amount of river squares"
++> msgid "Amount of grass squares"
++> msgid "Amount of forest squares"
++> msgid "Amount of swamp squares"
++> msgid "Amount of desert squares"
++> msgid "Map generation random seed"
++> msgid "General random seed"
++> msgid "Amount of \"special\" resource squares"
++> msgid "Map width in scares"
++> msgid "Map height in squares"
++> msgid "Method used to generate map"
++> msgid "Amount of huts (minor tribe villages)"
++> msgid "Update These Options"
++> msgid "Map"
++> msgid "Minimum number of players"
++> msgid "Maximum number of players"
++> msgid "Number of players to fill to with AI's"
++> msgid "Number of initial settlers per player"
++> msgid "Number of initial explorers per player"
++> msgid "Area where initial units are located"
++> msgid "Starting gold per player"
++> msgid "Number of initial advances per player"
++> msgid "Techlevel:"
++> msgid "Gold:"
++> msgid "Dispersion:"
++> msgid "Number of explorer:"
++> msgid "Number of settlers:"
++> msgid "AI-fill:"
++> msgid "Max number of players:"
++> msgid "Min number of players:"
++> msgid "Players"
++> msgid "Data subdir containing techs.ruleset"
++> msgid "default"
++> msgid "Data subdir containing governments.ruleset"
++> msgid "Data subdir containing units.ruleset"
++> msgid "Data subdir containing buildings.ruleset"
++> msgid "Data subdir containing terrain.ruleset"
++> msgid "Data subdir containing nations.rulese"
++> msgid "Data subdir containing cities.ruleset"
++> msgid "Data subdir containing game.ruleset"
++> msgid "Cities:"
++> msgid "Nations:"
++> msgid "Terrain:"
++> msgid "Buildings:"
++> msgid "Units:"
++> msgid "Governments:"
++> msgid "Techs:"
++> msgid "Directories"
++> msgid "Points required to gain a new advance"
++> msgid "Percentage penalty when changing tech"
++> msgid "Penalty when getting tech from treaty"
++> msgid "Penalty when getting a free tech"
++> msgid "Penalty when getting tech from conquering\n"
++> msgid "Food required for a city to grow"
++> msgid "Percentage food lost when need aqueduct"
++> msgid "City size before people become unhappy"
++> msgid "Number of cities for higher unhappiness"
++> msgid "Chance for conquered building destruction"
++> msgid "Style of Civ rules"
++> msgid "Chance of moving into tile after attack"
++> msgid "Reduce city population after attack"
++> msgid "Barbarian appearance frequency"
++> msgid "Barbarian onset year"
++> msgid "Minimum number of cities for civil war"
++> msgid "Chance in diplomat/spy contests"
++> msgid "Researchspeed:"
++> msgid "Tech Penalty:"
++> msgid "Diplomacy Cost:"
++> msgid "Conquer Cost:"
++> msgid "Free Cost:"
++> msgid "Food Box:"
++> msgid "Aqueduct Loss:"
++> msgid "Unhappysize:"
++> msgid "City Factor:"
++> msgid "Razechance:"
++> msgid "Civstyle:"
++> msgid "Occupychance:"
++> msgid "Kill Citizen:"
++> msgid "Barbarians:"
++> msgid "Onset Barbarians:"
++> msgid "Diplomacychance:"
++> msgid "Civilwarsize:"
++> msgid "Rules"
++> msgid "What is in the Demographics report"
++> msgid "NASRLPEMOqrb"
++> msgid "Fog Of War:"
++> msgid "Space Race:"
++> msgid "Auto Toggle:"
++> msgid "End Year:"
++> msgid "Time Out:"
++> msgid "Turn Block:"
++> msgid "Fixed Length:"
++> msgid "Demography:"
++> msgid "Save Turns:"
++> msgid "Compress:"
++> msgid "Scorelog:"
++> msgid "Gamelog:"
++> msgid "Whether to enable fog of war"
++> msgid "Whether to allow space race"
++> msgid "Whether AI-status toggles with connection"
++> msgid "Year the game ends"
++> msgid "Maximum seconds per turn"
++> msgid "Turn-blocking game play mode"
++> msgid "Fixed-length turns play mode"
++> msgid "Turns per auto-save"
++> msgid "Savegame compression level"
++> msgid "Whether to log player statistics"
++> msgid "Detail level for logging game events"
++> msgid "Game"
++> msgid "Update List"
++> msgid "Name"
++> msgid "Real Name"
++> msgid "From"
++> msgid "Type"
++> msgid "Level"
++> msgid "Create"
++> msgid "Create an AI player with a given name"
++> msgid "AI Toggle"
++> msgid "Toggle AI status of player"
++> msgid "Kick"
++> msgid "Cut connection to player"
++> msgid "Remove"
++> msgid ""
++> msgid "Change Level"
++> msgid "Changes command level of user or difficulty of AI"
++> msgid "Player List"
++> msgid "Console"
++> msgid "Load Game"
++> msgid "Execute Script"
++> msgid "Choose Game Log"
++> msgid "Choose Server Log"
++> msgid "Save game"
++> msgid "Save options as start script"
++> msgid "Edit demography report"
++> msgid "Lines"
++> msgid "Population"
++> msgid "Land Area"
++> msgid "Settled Area"
++> msgid "Research Speed"
++> msgid "Literacy"
++> msgid "Production"
++> msgid "Economics"
++> msgid "Military Service"
++> msgid "Pollution"
++> msgid "Columns"
++> msgid "Quantity"
++> msgid "Rank"
++> msgid "Best Nation"
++> msgid "OK"
++> msgid "Cancel"
++> msgid "Select Difficulty LEvel"
++> msgid "Easy"
++> msgid "Normal"
++> msgid "Hard"
++> msgid "Select Command Level"
++> msgid "None"
++> msgid "Info"
++> msgid "Hack"
++> msgid "Create New Player"
++> msgid "Couldn't find pixmap file: %s"
++> msgid "Error loading pixmap file: %s"
+diff -urN gCivServ-0.1b/po/pl.po.id gcivpl/po/pl.po.id
+--- gCivServ-0.1b/po/pl.po.id	Thu Jan  1 01:00:00 1970
++++ gcivpl/po/pl.po.id	Sun Mar  2 19:31:47 2003
+@@ -0,0 +1,218 @@
++msgid ""
++msgid "gCivServ - Startup"
++msgid "Load"
++msgid "Previous saved game to continue"
++msgid "Startscript to execute to set server parameters"
++msgid "..."
++msgid "Start Script:"
++msgid "Game:"
++msgid "Logs"
++msgid "File for logging game infos"
++msgid "File for logging server messages"
++msgid "Game Log:"
++msgid "Server Log:"
++msgid "Debug Level:"
++msgid "Amount of server messages (0-2)"
++msgid "Network"
++msgid "Port Number:"
++msgid "Port number the server should be listening on"
++msgid "Metaserver"
++msgid "Address:"
++msgid "Host ID:"
++msgid "Address of the metaserver"
++msgid "meta.freeciv.org"
++msgid "ID to be shown as server name on meta server"
++msgid "Use Metaserver"
++msgid "Start Server"
++msgid "gCivServ"
++msgid "Start Game"
++msgid "Files:"
++msgid "Save Startscript"
++msgid "Save Game"
++msgid "Save all set options. Can be loaded as script next time you start the server."
++msgid "Save the currently running game"
++msgid "About:"
++msgid ""
++msgid "Control"
++msgid "Width:"
++msgid "Height:"
++msgid "Generator:"
++msgid "Landmass:"
++msgid "Mountains:"
++msgid "Rivers:"
++msgid "Grass:"
++msgid "Forests:"
++msgid "Swamps:"
++msgid "Deserts:"
++msgid "Map seed:"
++msgid "Rand seed:"
++msgid "Specials:"
++msgid "Huts:"
++msgid "Amount of land vs ocean"
++msgid "Amount of hills/mountains"
++msgid "Amount of river squares"
++msgid "Amount of grass squares"
++msgid "Amount of forest squares"
++msgid "Amount of swamp squares"
++msgid "Amount of desert squares"
++msgid "Map generation random seed"
++msgid "General random seed"
++msgid "Amount of \"special\" resource squares"
++msgid "Map width in scares"
++msgid "Map height in squares"
++msgid "Method used to generate map"
++msgid "Amount of huts (minor tribe villages)"
++msgid "Update These Options"
++msgid "Map"
++msgid "Minimum number of players"
++msgid "Maximum number of players"
++msgid "Number of players to fill to with AI's"
++msgid "Number of initial settlers per player"
++msgid "Number of initial explorers per player"
++msgid "Area where initial units are located"
++msgid "Starting gold per player"
++msgid "Number of initial advances per player"
++msgid "Techlevel:"
++msgid "Gold:"
++msgid "Dispersion:"
++msgid "Number of explorer:"
++msgid "Number of settlers:"
++msgid "AI-fill:"
++msgid "Max number of players:"
++msgid "Min number of players:"
++msgid "Players"
++msgid "Data subdir containing techs.ruleset"
++msgid "default"
++msgid "Data subdir containing governments.ruleset"
++msgid "Data subdir containing units.ruleset"
++msgid "Data subdir containing buildings.ruleset"
++msgid "Data subdir containing terrain.ruleset"
++msgid "Data subdir containing nations.rulese"
++msgid "Data subdir containing cities.ruleset"
++msgid "Data subdir containing game.ruleset"
++msgid "Cities:"
++msgid "Nations:"
++msgid "Terrain:"
++msgid "Buildings:"
++msgid "Units:"
++msgid "Governments:"
++msgid "Techs:"
++msgid "Directories"
++msgid "Points required to gain a new advance"
++msgid "Percentage penalty when changing tech"
++msgid "Penalty when getting tech from treaty"
++msgid "Penalty when getting a free tech"
++msgid "Penalty when getting tech from conquering\n"
++msgid "Food required for a city to grow"
++msgid "Percentage food lost when need aqueduct"
++msgid "City size before people become unhappy"
++msgid "Number of cities for higher unhappiness"
++msgid "Chance for conquered building destruction"
++msgid "Style of Civ rules"
++msgid "Chance of moving into tile after attack"
++msgid "Reduce city population after attack"
++msgid "Barbarian appearance frequency"
++msgid "Barbarian onset year"
++msgid "Minimum number of cities for civil war"
++msgid "Chance in diplomat/spy contests"
++msgid "Researchspeed:"
++msgid "Tech Penalty:"
++msgid "Diplomacy Cost:"
++msgid "Conquer Cost:"
++msgid "Free Cost:"
++msgid "Food Box:"
++msgid "Aqueduct Loss:"
++msgid "Unhappysize:"
++msgid "City Factor:"
++msgid "Razechance:"
++msgid "Civstyle:"
++msgid "Occupychance:"
++msgid "Kill Citizen:"
++msgid "Barbarians:"
++msgid "Onset Barbarians:"
++msgid "Diplomacychance:"
++msgid "Civilwarsize:"
++msgid "Rules"
++msgid "What is in the Demographics report"
++msgid "NASRLPEMOqrb"
++msgid "Fog Of War:"
++msgid "Space Race:"
++msgid "Auto Toggle:"
++msgid "End Year:"
++msgid "Time Out:"
++msgid "Turn Block:"
++msgid "Fixed Length:"
++msgid "Demography:"
++msgid "Save Turns:"
++msgid "Compress:"
++msgid "Scorelog:"
++msgid "Gamelog:"
++msgid "Whether to enable fog of war"
++msgid "Whether to allow space race"
++msgid "Whether AI-status toggles with connection"
++msgid "Year the game ends"
++msgid "Maximum seconds per turn"
++msgid "Turn-blocking game play mode"
++msgid "Fixed-length turns play mode"
++msgid "Turns per auto-save"
++msgid "Savegame compression level"
++msgid "Whether to log player statistics"
++msgid "Detail level for logging game events"
++msgid "Game"
++msgid "Update List"
++msgid "Name"
++msgid "Real Name"
++msgid "From"
++msgid "Type"
++msgid "Level"
++msgid "Create"
++msgid "Create an AI player with a given name"
++msgid "AI Toggle"
++msgid "Toggle AI status of player"
++msgid "Kick"
++msgid "Cut connection to player"
++msgid "Remove"
++msgid ""
++msgid "Change Level"
++msgid "Changes command level of user or difficulty of AI"
++msgid "Player List"
++msgid "Console"
++msgid "Load Game"
++msgid "Execute Script"
++msgid "Choose Game Log"
++msgid "Choose Server Log"
++msgid "Save game"
++msgid "Save options as start script"
++msgid "Edit demography report"
++msgid "Lines"
++msgid "Population"
++msgid "Land Area"
++msgid "Settled Area"
++msgid "Research Speed"
++msgid "Literacy"
++msgid "Production"
++msgid "Economics"
++msgid "Military Service"
++msgid "Pollution"
++msgid "Columns"
++msgid "Quantity"
++msgid "Rank"
++msgid "Best Nation"
++msgid "OK"
++msgid "Cancel"
++msgid "Select Difficulty LEvel"
++msgid "Easy"
++msgid "Normal"
++msgid "Hard"
++msgid "Select Command Level"
++msgid "None"
++msgid "Info"
++msgid "Hack"
++msgid "Create New Player"
++msgid "Couldn't find pixmap file: %s"
++msgid "Error loading pixmap file: %s"
++msgid "Select generator type"
++msgid ""
++msgid "standard, with random continents"
++msgid ""
++msgid ""
