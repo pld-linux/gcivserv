@@ -10,6 +10,7 @@ Source0:	http://www.hoeyer.de/projects/gcivserv/src/gCivServ-%{version}.tgz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-pl_lang.patch
+Patch1:		%{name}-enviroment.patch
 URL:		http://www.freeciv.org/
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel > 1.2.1
@@ -30,6 +31,7 @@ Meiersa.
 %prep
 %setup -q -n gCivServ-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
 %configure2_13 \
