@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games/Strategy
 Source0:	http://www.hoeyer.de/projects/gcivserv/src/gCivServ-%{version}.tgz
+# Source0-md5:	8118a8dfb67efff5ef0ee7592f9ae41e
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-pl_lang.patch
