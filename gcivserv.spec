@@ -13,6 +13,8 @@ Source2:	%{name}.png
 Patch0:		%{name}-pl_lang.patch
 Patch1:		%{name}-enviroment.patch
 URL:		http://www.freeciv.org/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel > 1.2.1
 Requires:	freeciv
