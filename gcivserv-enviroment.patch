@@ -1,0 +1,11 @@
+--- ./src/callbacks.c.orig	Sat Jan  6 22:07:17 2001
++++ ./src/callbacks.c	Tue Apr  8 00:29:01 2003
+@@ -95,7 +95,7 @@
+   char* smetaserver = gtk_entry_get_text( GTK_ENTRY(pmetaserver) );
+   char* shostid     = gtk_entry_get_text( GTK_ENTRY(phostid)     );
+   
+-  char server[1024]="export LANG=C;civserver";
++  char server[1024]="/usr/bin/civserver";
+   
+   if(sgame[0]!=0){
+     strcat(server," -f ");
