@@ -3,7 +3,7 @@ Summary(es):	GTK front-end por Clon del juego Civilization
 Summary(pl):	Graficzny frontend dla serwera freeciv
 Name:		gcivserv
 Version:	0.1b
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Games/Strategy
 Source0:	http://www.hoeyer.de/projects/gcivserv/src/gCivServ-%{version}.tgz
