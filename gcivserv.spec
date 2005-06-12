@@ -44,11 +44,11 @@ Meiersa.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults \
-	$RPM_BUILD_ROOT{%{_applnkdir}/Games/Strategy,%{_pixmapsdir}}
+	$RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/Strategy
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %find_lang %{name}
@@ -60,5 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS README ChangeLog NEWS
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Games/Strategy/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
