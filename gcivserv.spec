@@ -4,7 +4,7 @@ Summary(pl):	Graficzny frontend dla serwera freeciv
 Name:		gcivserv
 Version:	0.1b
 Release:	3
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications/Games/Strategy
 Source0:	http://www.hoeyer.de/projects/gcivserv/src/gCivServ-%{version}.tgz
 # Source0-md5:	8118a8dfb67efff5ef0ee7592f9ae41e
@@ -58,7 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS README ChangeLog NEWS
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
