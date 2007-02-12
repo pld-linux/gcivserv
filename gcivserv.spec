@@ -1,6 +1,6 @@
 Summary:	Graphical front-end for FREE CIVilization clone
-Summary(es):	GTK+ front-end por Clon del juego Civilization
-Summary(pl):	Graficzny frontend dla serwera freeciv
+Summary(es.UTF-8):   GTK+ front-end por Clon del juego Civilization
+Summary(pl.UTF-8):   Graficzny frontend dla serwera freeciv
 Name:		gcivserv
 Version:	0.1b
 Release:	3
@@ -24,10 +24,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GTK+ front-end for server of freeciv - clone of Sid Meiers
 Civilization.
 
-%description -l es
+%description -l es.UTF-8
 GTK+ front-end por Clon del juego Civilization.
 
-%description -l pl
+%description -l pl.UTF-8
 Graficzny frontend dla serwera freeciv - klonu Civilization Sida
 Meiersa.
 
