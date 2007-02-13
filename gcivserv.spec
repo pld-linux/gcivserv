@@ -1,6 +1,6 @@
 Summary:	Graphical front-end for FREE CIVilization clone
-Summary(es.UTF-8):   GTK+ front-end por Clon del juego Civilization
-Summary(pl.UTF-8):   Graficzny frontend dla serwera freeciv
+Summary(es.UTF-8):	GTK+ front-end por Clon del juego Civilization
+Summary(pl.UTF-8):	Graficzny frontend dla serwera freeciv
 Name:		gcivserv
 Version:	0.1b
 Release:	3
