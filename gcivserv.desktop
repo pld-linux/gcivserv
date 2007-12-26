@@ -1,10 +1,9 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=gciverver
 Comment=Graphical server for Free Civilization clone game
 Comment[pl]=Graficzny serwer dla freeciv
 Exec=gcivserv
-Icon=gcivserv.png
+Icon=gcivserv
 Terminal=false
 Type=Application
 Categories=GTK;Game;StrategyGame;
