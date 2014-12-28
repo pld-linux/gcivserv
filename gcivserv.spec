@@ -15,7 +15,7 @@ Patch1:		%{name}-enviroment.patch
 URL:		http://www.freeciv.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+-devel > 1.2.1
 Requires:	freeciv
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
